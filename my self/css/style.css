@@ -1,0 +1,1071 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Cairo', sans-serif;
+    color: #dfdfdf;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+/* Style Header */
+
+.test {
+    width: 100%;
+    height: 1100px;
+    background-image: url('../test.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header {
+    padding: 5px;
+    background-color: #1212123d;
+    backdrop-filter: blur(10px);
+}
+
+.header .navpar {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header .navpar .logo i {
+    font-size: 45px;
+}
+
+.header .navpar .nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    border: #202020 1px solid;
+    padding: 8px;
+    border-radius: 50px;
+    background-color: #26262658;
+}
+
+.header .navpar .nav ul li a {
+    text-decoration: none;
+    color: #dfdfdf;
+    padding: 0 20px;
+}
+
+/* Style Home */
+.home-page {
+    width: 100%;
+    height: 70%;
+    background-image: url('../test.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home-page .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 0;
+}
+
+
+.home-page .container h1 {
+    font-size: 35px;
+    margin: 4px;
+    text-align: center;
+}
+
+.home-page .container p {
+    color: #696969;
+    max-width: 550px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* الحاوية الأساسية */
+.container {
+    text-align: center;
+    /* padding: 50px; */
+  }
+  
+  /* إعدادات الحركة */
+  .animate {
+    opacity: 0; /* اجعل النص غير مرئي في البداية */
+    transform: translateY(50px); /* ابدأ بتحريكه من الأسفل */
+    animation: slideUp 1s ease forwards; /* حركة الصعود */
+    animation-delay: 0.3s; /* تأخير الحركة قليلاً */
+  }
+  
+  /* إعداد الحركة من الأسفل إلى المكان النهائي */
+  @keyframes slideUp {
+    to {
+      opacity: 1; /* اجعل النص مرئي */
+      transform: translateY(0); /* احركه إلى مكانه الأصلي */
+    }
+  }
+  
+  /* إذا كنت تريد ضبط التأخير لكل عنصر بشكل منفصل */
+  .animate:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  
+  .animate:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  
+  .animate:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  
+/* Style  Share  page */
+.share {
+    margin: 0 100px;
+}
+.share .container .icon-share {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.share .container h1 {
+    color: #aeaead;
+}
+
+.share .container .icon-share div {
+    font-size: 25px;
+    color: #696969;
+}
+
+.share .container .icon-share div i {
+    color: #696969;
+    padding: 0 5px 0 0;
+}
+
+/* Style About Page */
+.about {
+    margin: 0 100px;
+}
+
+.about .container-about {
+    text-align: center;
+    background-color: #121212;
+    padding: 50px;
+    border: #1a1a1a 1px solid;
+    border-radius: 15px;
+}
+
+.about .container-about .title-me {
+    background-color: #181818;
+    margin: 0 0 10px 0;
+    padding: 8px 30px;
+    display: inline-block;
+    border: #1a1a1a 1px solid;
+    border-radius: 50px;
+}
+
+.about .container-about .title-me h1 {
+    color: #daec26;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.about .container-about .p-title {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .container-about .p-title p {
+    font-size: 18px;
+    max-width: 800px;
+}
+
+.card-2-about {
+    margin: 75px 100px;
+}
+
+.card-2-about .container-about-2 {
+    text-align: center;
+    /* background-color: #121212; */
+    /* padding: 50px; */
+    /* border: #1a1a1a 1px solid; */
+    /* border-radius: 15px; */
+}
+
+.card-2-about .container-about-2 .quiat .title-me-2 {
+    background-color: #181818;
+    margin: 0 0 10px 0;
+    padding: 8px 30px;
+    display: inline-block;
+    border: #1a1a1a 1px solid;
+    border-radius: 50px;
+}
+
+.card-2-about .container-about-2 .quiat .title-me-2 h1 {
+    color: #daec26;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.card-2-about .container-about-2 .quiat .p-title-2 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-2-about .container-about-2 .quiat .p-title-2 p {
+    font-size: 18px;
+    max-width: 400px;
+}
+
+.card-container .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+/* تنسيق الكرت */
+.icon-card {
+    background-color: #121212;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px 0;
+    text-align: right;
+}
+
+.card-container .grid .icon-card .bakg-card {
+    display: flex;
+}
+
+.card-container .grid .icon-card .bakg-card .icon-card-i i {
+    background-color: #dbec261f;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #daec26;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: #dbec2617 1px solid;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.card-container .grid .icon-card .bakg-card .icon {
+    text-align: center;
+    margin: auto;
+}
+
+.card-container .grid .icon-card .bakg-card .icon i {
+    display: inline-block; /* للتأكد من أن العنصر يكون بحجم الأيقونة */
+    background: linear-gradient(to top, rgba(75, 75, 75, 0.671), rgba(22, 22, 22, 0.844));
+    -webkit-background-clip: text; /* هذا يجعل اللون خلفية النص فقط */
+    color: transparent; /* يجعل النص شفافًا لإظهار الخلفية */
+    font-size: 90px;
+    padding: 15px 0 0 0;
+}
+
+.group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.group .icon-card {
+    display: flex;
+    align-self: center;
+}
+
+.group .icon-card .bakg-card {
+    display: flex;
+}
+
+.card-container .group .icon-card .bakg-card .icon-card-i i {
+    background-color: #dbec261f;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #daec26;
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+    border: #dbec2617 1px solid;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.card-container .group .icon-card .bakg-card .icon {
+    text-align: center;
+    margin: auto;
+}
+
+.card-container .group .icon-card .bakg-card .icon-fa-brands i {
+    font-size: 60px;
+    padding: 5px 10px;
+}
+
+.card-container .group .icon-card .bakg-card .icon i, .icon-fa-brands i {
+    display: inline-block;
+    background: linear-gradient(to bottom left, rgba(75, 75, 75, 0.671), rgba(22, 22, 22, 0.844));
+    -webkit-background-clip: text;
+    color: transparent; 
+    font-size: 90px;
+    padding: 15px 0 0 0;
+}
+
+.card-container .grid .icon-card p,
+.card-container .group .icon-card .prgraf p {
+    color: #696969;
+}
+
+/* Style Services */
+.services {
+    margin: 50px 100px;
+}
+
+.services .container-services {
+    text-align: center;
+}
+
+.services .container-services .quiat .title-me-2 {
+    background-color: #181818;
+    margin: 0 0 10px 0;
+    padding: 8px 30px;
+    display: inline-block;
+    border: #1a1a1a 1px solid;
+    border-radius: 50px;
+}
+
+.services .container-services .quiat .title-me-2 h1 {
+    color: #daec26;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.services .container-services .quiat .p-title-2 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.services .container-services .quiat .p-title-2 p {
+    font-size: 18px;
+    max-width: 400px;    
+}
+
+.services .container-services .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.services .container-services .card-container .icon-card {
+    background-color: #121212;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px 0;
+    text-align: right;
+}
+
+.services .container-services .card-container .icon-card .bakg-card {
+
+    display: flex;
+}
+
+.services .container-services .card-container .icon-card .bakg-card .icon-card-i i {
+    background-color: #dbec261f;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #daec26;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    border: #dbec2617 1px solid;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.services .container-services .card-container .icon-card p {
+    color: #696969;
+}
+
+/* Style About Us */
+.about-us {
+    margin: 50px 100px;
+}
+
+.about-us .container {
+    text-align: center;
+}
+
+.about-us .container .title-me-2 {
+    background-color: #181818;
+    margin: 0 0 10px 0;
+    padding: 8px 30px;
+    display: inline-block;
+    border: #1a1a1a 1px solid;
+    border-radius: 50px;
+}
+
+.about-us .container .title-me-2 h1 {
+    color: #daec26;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.about-us .container .p-title-2 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.about-us .container .p-title-2 p {
+    font-size: 18px;
+    max-width: 400px;    
+}
+
+.about-us .container .dop-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.about-us .container .dop-card .bottom-about-us {
+    background-color: #121212;
+    border-radius: 15px;
+    padding: 20px;
+    /* margin: 10px 0; */
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-us .container .dop-card .bottom-about-us .image {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.about-us .container .dop-card .bottom-about-us .image i {
+    padding: 0 0 0 5px;
+    margin: 0 0 0 1px;
+    color: #dfdfdf; 
+    font-size: 22px;
+    border-radius: 50px;
+    border: #1a1a1a;
+}
+
+.about-us .container .dop-card .bottom-about-us .image div h3 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.about-us .container .dop-card .bottom-about-us .image div p {
+    margin: 0;
+    font-size: 10px;
+    color: #696969;
+}
+
+.about-us .container .dop-card .bottom-about-us .pescrebtion p  {
+    color: #696969;
+    margin: 0 8px;
+    font-size: 14px;
+}
+
+.about-us .container .dop-card .bottom-about-us .pescrebtion span {
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.click-section {
+    margin: 75px 100px;
+}
+
+.click-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 50px 0;
+}
+
+.click-section .container div h2 {
+    font-size: 40px;
+    font-weight: 100;
+    margin: 8px;
+}
+
+.click-section .container div p {
+    font-size: 14px;
+    color: #696969;
+}
+
+.count {
+    font-size: 2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.container div:hover .count {
+    color: #696969;
+}
+
+.line-tag {
+    width: 2.5px;
+    height: 75px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, rgba(112, 112, 112, 0.7), rgba(51, 51, 51, 0.112));
+}
+
+.bottom-about-us {
+    opacity: 0; /* العناصر تبدأ غير مرئية */
+    transform: translateY(20px); /* حركة البداية للأسفل */
+    transition: opacity 2s ease, transform 2s ease; /* تحكم في الانتقال */
+}
+
+.bottom-about-us.show {
+    opacity: 1; /* ظهور العناصر */
+    transform: translateY(0); /* العودة للمكان الأصلي */
+}
+
+/* تأثيرات ظهور icon-card */
+.icon-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2.5s ease, transform 2.5s ease;
+}
+
+.icon-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* الأيقونات تبدأ مخفية */
+.icon {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+/* عندما تظهر الأيقونات */
+.icon.show-icon {
+    opacity: 1;
+}
+
+.icon-share {
+    display: none; /* إخفاء العناصر بشكل افتراضي */
+    opacity: 0; /* إخفاء العناصر بشكل تام */
+    transform: translateY(20px); /* التحريك للأسفل قليلاً */
+    transition: opacity 1.2s ease, transform 1.2s ease; /* تأثير الانتقال */
+}
+
+.icon-share.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Style Contact */
+.contact {
+    margin: 50px 100px;
+}
+.contact .container {
+    padding: 50px;
+    background-color: #121212;
+    border-radius: 15px;
+}
+
+.contact .container .icon-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .container .icon-contact h1 {
+    font-size: 28px;
+    margin: 5px 0;
+    max-width: 800px;
+}
+
+.contact .container .icon-contact p {
+    color: #696969;
+    font-size: 14px;
+    max-width: 800px;
+}
+
+.contact .container .input-contact form {
+    background-color: #202020;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #1a1a1a;
+    border-radius: 10px;
+}
+
+.contact .container .input-contact form input[type=email] {
+    border: none;
+    outline: none;
+    width: 250px;
+    background-color: #ffffff00;
+    background-color: transparent;
+    font-size: 15px;
+}
+
+.contact .container .input-contact button {
+    border: 1px solid #daec26;
+    background-color: #daec26;
+    padding: 8px 15px;
+    color: #0d0d0d;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.submit-share {
+    display: flex;
+    justify-content: center;
+    /* gap: 10px; */
+    margin: 20px 0 0 0;
+}
+
+.submit-share i {
+    font-size: 18px; /* حجم الأيقونات */
+    color: gray; /* اللون الأساسي للأيقونات */
+    transition: color 0.3s ease, transform 0.3s ease; /* تأثير الانتقال */
+    padding: 10px; /* مساحة داخلية حول الأيقونات */
+}
+
+/* تأثير عند اللمس */
+.submit-share i:hover {
+    color: white; /* تغيير لون الأيقونة عند اللمس */
+}
+
+.submit-share i.fa-instagram:hover {
+    color: transparent; /* جعل اللون الأساسي شفافًا */
+    background: linear-gradient(45deg, #F58529, #D62976, #962FBF, #4D6EFA); /* التدرج الخاص بإنستغرام */
+    -webkit-background-clip: text; /* استخدام تدرج الخلفية للون النص */
+    background-clip: text; /* استخدام تدرج الخلفية للون النص */
+}
+
+.submit-share i.fa-whatsapp:hover {
+    color: #25D366; /* اللون الأصلي لـ WhatsApp عند اللمس */
+    transform: scale(1.1); /* تكبير الأيقونة عند اللمس */
+}
+
+
+footer {
+    background-color: #1b1b1b;
+}
+
+footer .container {
+    margin: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .container a .logo i {
+    font-size: 45px;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+}
+
+footer .container ul li a {
+    padding: 5px 15px;
+    color: #696969;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+footer .container .copy p {
+    color: #696969;
+    font-size: 14px;
+}
+
+footer .container .navpar-footer .card-none {
+    display: none;
+}
+
+/* Style Cotation */
+
+/* Style phalstin */
+.free-phalstin {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 150px;
+}
+
+.free-phalstin .container {
+    padding: 50px;
+    background-color: #121212f6;
+    border-radius: 15px;
+    border: #202020 1px solid;
+    margin: 75px;
+    height: 90%;
+}
+
+.free-phalstin .container .title-free  h1 {
+    font-size: 30px;
+    /* max-width: 800px; */
+    display: inline-block;
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.84), rgba(252, 252, 252, 0.716));
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 5px;
+}
+
+@media (max-width: 1024px) {
+    .free-phalstin .container .title-free  h1 {
+        font-size: 28px;
+    }
+
+    .free-phalstin .container .img img {
+        width: 450px;
+    }
+}
+
+.free-phalstin .container .img img {
+    border-radius: 15px;
+    width: 45%;
+}
+
+@media (max-width: 768px) { 
+    .share, 
+    .about,
+    .about-us,
+    .card-2-about,
+    .services,
+    .click-section,
+    .contact,
+    footer .container {
+        margin: 50px 50px;
+    }
+
+    .home-page {
+        height: 600px;
+    }
+
+    .home-page .container h1 {
+        font-size: 28px;
+    }
+
+    .home-page .container p {
+        font-size: 12px;
+    }
+
+    .share .container .icon-share div {
+        font-size: 20px;
+    }
+    
+    .about .container-about {
+        padding: 40px;
+    }
+
+    .about .container-about .title-me {
+        padding: 6px 25px;
+    }
+
+    .card-2-about .container-about-2 .quiat .title-me-2 {
+        padding: 6px 25px;
+    }
+
+    /* تنسيق الكرت */
+    .icon-card {
+        padding-bottom: 15px;
+        margin: 0;
+    }
+
+    .card-container .grid .icon-card .bakg-card .icon-card-i i {
+        width: 30px;
+        height: 30px;
+    }
+
+    .card-container .grid .icon-card .bakg-card .icon i {
+        font-size: 75px;
+        padding: 20px 0 0 0;
+    }
+
+    .card-container .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .group {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .services .container-services .quiat .title-me-2 {
+        padding: 6px 25px;
+    }
+
+    .services .container-services .card-container .icon-card {
+        padding: 15px;
+        margin: 0;
+    }
+
+    .services .container-services .card-container .icon-card .bakg-card .icon-card-i i {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .services .container-services .card-container .icon-card h3 {
+        font-size: 16px;
+    }
+
+    .services .container-services .card-container .icon-card p {
+        font-size: 14px;
+    }
+
+    .services .container-services .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .about-us .container .title-me-2 {
+        padding: 6  px 25px;
+    }
+    
+    .about-us .container .dop-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .contact .container .icon-contact h1 {
+        font-size: 22px;
+    }
+
+    .contact .container .icon-contact p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 425px) {
+    .header .navpar .logo i {
+        font-size: 35px;
+    }
+    .header .navpar .nav ul {
+        padding: 5px;
+    }
+
+    .header .navpar .nav ul li a {
+        padding: 0 13px;
+        font-size: 12px;
+    }
+
+    .share, 
+    .about,
+    .about-us,
+    .card-2-about,
+    .services,
+    .click-section,
+    .contact,
+    footer .container {
+        margin: 50px 15px;
+    }
+
+    .home-page {
+        height: 450px;
+    }
+
+    .home-page .container h1 {
+        font-size: 24px;
+    }
+
+    .home-page .container p {
+        font-size: 12px;
+    }
+
+    .share .container .icon-share div {
+        font-size: 12px;
+    }
+    
+    .about .container-about {
+        padding: 30px;
+    }
+
+    .about .container-about .title-me {
+        padding: 5px 20px;
+    }
+    
+    .card-2-about .container-about-2 .quiat .title-me-2 h1,
+    .about .container-about .title-me h1 {
+        font-size: 12px;
+    }
+
+    .about .container-about .p-title p,
+    .card-2-about .container-about-2 .quiat .p-title-2 p {
+        font-size: 14px;
+    }
+
+    .card-2-about .container-about-2 .quiat .title-me-2 {
+        padding: 5px 20px;
+    }
+
+    /* تنسيق الكرت */
+    .icon-card {
+        padding-bottom: 15px;
+        margin: 0;
+    }
+
+    .card-container .grid .icon-card .bakg-card .icon-card-i i {
+        width: 30px;
+        height: 30px;
+    }
+
+    .card-container .grid .icon-card .bakg-card .icon i {
+        font-size: 65px;
+        padding: 20px 0 0 0;
+    }
+
+    .card-container .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .group {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .services .container-services .quiat .title-me-2 {
+        padding: 6px 25px;
+    }
+
+    .services .container-services .card-container .icon-card {
+        padding: 15px;
+        margin: 0;
+    }
+
+    .services .container-services .card-container .icon-card .bakg-card .icon-card-i i {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .card-container .group .icon-card .bakg-card .icon-fa-brands {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .card-container .group .icon-card .bakg-card .icon-fa-brands i,
+    .card-container .group .icon-card .bakg-card .icon i {
+        font-size: 35px;
+        padding: 5px 10px 0 10px;
+    }
+
+    .services .container-services .card-container .icon-card h3 {
+        font-size: 14px;
+    }
+
+    .services .container-services .card-container .icon-card p {
+        font-size: 14px;
+    }
+
+    .card-container p {
+        font-size: 12px ;
+    }
+
+    .services .container-services .card-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .about-us .container .title-me-2 {
+        padding: 6  px 25px;
+    }
+    
+    .about-us .container .dop-card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+
+    .contact .container {
+        padding: 35px;
+    }
+
+    .contact .container .icon-contact h1 {
+        font-size: 16px;
+    }
+
+    .contact .container .icon-contact p {
+        font-size: 12px;
+    }
+
+    .contact .container .input-contact form input[type=email] {
+        font-size: 14px;
+        width: 125px;
+    }
+
+    footer .container a .logo i {
+        font-size: 35px;
+    }
+
+    footer .container ul li a i {
+        color: #696969;
+        font-size: 11px;
+    }
+
+    footer .container .navpar-footer .card-block {
+        display: none;
+    }
+
+
+    footer .container .navpar-footer .card-none {
+        display: flex;
+    }
+
+    footer .container .copy p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    .home-page {
+        height: 400px;
+    }
+}
+
+body {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+._1a2b3c{color:blue;text-decoration:none}
+._4d5e6f{background-color:green;color:white}
